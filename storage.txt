@@ -1,0 +1,104 @@
+<ac:structured-macro ac:macro-id="a1529b36-ff00-4b50-80f0-da941adec9d1" ac:name="confiform" ac:schema-version="1">
+  <ac:parameter ac:name="formName">Invoice</ac:parameter>
+  <ac:parameter ac:name="registrationFormTitle">Invoices rows</ac:parameter>
+  <ac:rich-text-body>
+    <p>
+      <ac:structured-macro ac:macro-id="fb068bde-f4fb-42a6-b6c3-a365c1e5ed27" ac:name="confiform-field-definition" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">date</ac:parameter>
+        <ac:parameter ac:name="fieldLabel">date</ac:parameter>
+        <ac:parameter ac:name="type">date</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="7755a69a-3d17-4fcc-a68d-4d13eda5217d" ac:name="confiform-field-definition" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">price</ac:parameter>
+        <ac:parameter ac:name="fieldLabel">Price</ac:parameter>
+        <ac:parameter ac:name="fieldDescription">in eur</ac:parameter>
+        <ac:parameter ac:name="type">number</ac:parameter>
+        <ac:parameter ac:name="required">true</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="e394882d-746c-4dbd-8f7a-9991c65e5f39" ac:name="confiform-field-definition" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">dateyear</ac:parameter>
+        <ac:parameter ac:name="fieldLabel">dateyear</ac:parameter>
+        <ac:parameter ac:name="extras">FORMATDATEAS([entry.date], yy)</ac:parameter>
+        <ac:parameter ac:name="type">calc</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="4ad39dcc-2641-4f89-bcbf-3eddad745128" ac:name="confiform-field-definition" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">datenow</ac:parameter>
+        <ac:parameter ac:name="fieldLabel">datenow</ac:parameter>
+        <ac:parameter ac:name="extras">FORMATDATEAS(NOW(), yy)</ac:parameter>
+        <ac:parameter ac:name="type">calc</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <ac:structured-macro ac:macro-id="d23698df-27c3-4502-9e67-b6b74d63520d" ac:name="confiform-entry-register" ac:schema-version="1">
+      <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+      <ac:rich-text-body>
+        <p>
+          <br/>
+        </p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:macro-id="0a4c5f9b-dcf4-4b9d-8c4d-72f2e5cce5f1" ac:name="confiform-table" ac:schema-version="1">
+  <ac:parameter ac:name="formName">Invoice</ac:parameter>
+  <ac:rich-text-body>
+    <p>
+      <ac:structured-macro ac:macro-id="011a1505-cec6-474d-9d68-1590767f1e6c" ac:name="confiform-field" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">date</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="a57ba357-7710-4800-924f-f4f36d3e0e7c" ac:name="confiform-field" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">price</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="50fe9ca1-56e8-4b96-97ee-01d4cc853845" ac:name="confiform-field" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">dateyear</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="d43009bd-2bad-4763-81ff-39c6175be6f5" ac:name="confiform-field" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">datenow</ac:parameter>
+      </ac:structured-macro>
+    </p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<p>
+  <br/>
+</p>
+<p>
+  <br/>
+</p>
+<p>Totals per type</p>
+<ac:structured-macro ac:macro-id="30654675-fc29-4a5f-b82e-82682150fd02" ac:name="confiform-table-merger" ac:schema-version="1">
+  <ac:rich-text-body>
+    <p>
+      <ac:structured-macro ac:macro-id="5aecc0dd-70e4-4cd5-bd0b-a4051c659cba" ac:name="confiform-field" ac:schema-version="1">
+        <ac:parameter ac:name="overrideLabel">total</ac:parameter>
+        <ac:parameter ac:name="fieldName">Total:([entry.price])</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <p>
+      <ac:structured-macro ac:macro-id="f4400a3e-ccf9-499d-a423-eff5966a40a7" ac:name="confiform-field" ac:schema-version="1">
+        <ac:parameter ac:name="fieldName">dateyear</ac:parameter>
+      </ac:structured-macro>
+    </p>
+    <ac:structured-macro ac:macro-id="12fa94ed-24aa-484a-8ff8-7b123dac31fa" ac:name="confiform-table" ac:schema-version="1">
+      <ac:parameter ac:name="formName">Invoice</ac:parameter>
+      <ac:rich-text-body>
+        <p>
+          <br/>
+        </p>
+      </ac:rich-text-body>
+    </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<p>
+  <br/>
+</p>
