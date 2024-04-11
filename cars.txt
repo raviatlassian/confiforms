@@ -1,0 +1,88 @@
+<ac:layout>
+  <ac:layout-section ac:type="single">
+    <ac:layout-cell>
+      <p>Number of <strong>Cars</strong> received in current year: __</p>
+      <p>Number of <strong>Tesla Cars</strong> received in current year: __</p>
+      <p>Number of <strong>Tesla Cars</strong> received by <strong>John</strong> in current year: __</p>
+      <p>Number of <strong>Cars</strong> received in the last 7 days: ___</p>
+      <p>Total <strong>Cost</strong> of <strong>Tesla Cars</strong> received this year: ___</p>
+      <p>
+        <br/>
+      </p>
+    </ac:layout-cell>
+  </ac:layout-section>
+  <ac:layout-section ac:type="single">
+    <ac:layout-cell>
+      <p>
+        <br/>
+      </p>
+      <ac:structured-macro ac:macro-id="87706a20-d582-4299-8cc9-6cf1e1e2fcd5" ac:name="confiform" ac:schema-version="1">
+        <ac:parameter ac:name="hideAdminUI">true</ac:parameter>
+        <ac:parameter ac:name="formName">Invoice</ac:parameter>
+        <ac:parameter ac:name="registrationFormTitle">Invoice</ac:parameter>
+        <ac:rich-text-body>
+          <p>
+            <ac:structured-macro ac:macro-id="6c981d19-693e-474b-9eb7-cd008633b2d4" ac:name="confiform-field-definition" ac:schema-version="1">
+              <ac:parameter ac:name="fieldName">dateReceived</ac:parameter>
+              <ac:parameter ac:name="fieldLabel">dateReceived</ac:parameter>
+              <ac:parameter ac:name="extras">MM/dd/yy</ac:parameter>
+              <ac:parameter ac:name="type">date</ac:parameter>
+              <ac:parameter ac:name="required">true</ac:parameter>
+            </ac:structured-macro>
+          </p>
+          <p>
+            <ac:structured-macro ac:macro-id="1c9f33ed-5476-4411-88d8-637fb313dab1" ac:name="confiform-field-definition" ac:schema-version="1">
+              <ac:parameter ac:name="fieldName">carType</ac:parameter>
+              <ac:parameter ac:name="fieldLabel">carType</ac:parameter>
+              <ac:parameter ac:name="values">false[1=Toyota|2=Honda|3=Mazda|4=Tesla|]</ac:parameter>
+              <ac:parameter ac:name="type">select</ac:parameter>
+              <ac:parameter ac:name="required">true</ac:parameter>
+            </ac:structured-macro>
+          </p>
+          <p>
+            <ac:structured-macro ac:macro-id="d68a019d-b580-47ee-8f3f-9c01d3ea8f8e" ac:name="confiform-field-definition" ac:schema-version="1">
+              <ac:parameter ac:name="fieldName">agent</ac:parameter>
+              <ac:parameter ac:name="fieldLabel">agent</ac:parameter>
+              <ac:parameter ac:name="values">false[1=John|2=Robert|3=Mary|4=Miles|]</ac:parameter>
+              <ac:parameter ac:name="extras">label;false</ac:parameter>
+              <ac:parameter ac:name="type">select</ac:parameter>
+              <ac:parameter ac:name="required">true</ac:parameter>
+            </ac:structured-macro>
+          </p>
+          <p>
+            <ac:structured-macro ac:macro-id="df762561-7714-4ff3-bad9-7c923793559e" ac:name="confiform-field-definition" ac:schema-version="1">
+              <ac:parameter ac:name="fieldName">cost</ac:parameter>
+              <ac:parameter ac:name="fieldLabel">cost</ac:parameter>
+              <ac:parameter ac:name="values">$</ac:parameter>
+              <ac:parameter ac:name="extras">###, ###</ac:parameter>
+              <ac:parameter ac:name="type">currency</ac:parameter>
+              <ac:parameter ac:name="required">true</ac:parameter>
+            </ac:structured-macro>
+          </p>
+          <ac:structured-macro ac:macro-id="46407d9f-9828-4336-b2ff-9e0a6a903b0a" ac:name="confiform-entry-register" ac:schema-version="1">
+            <ac:parameter ac:name="formName">Invoice</ac:parameter>
+            <ac:parameter ac:name="registrationButtonLabel">Add</ac:parameter>
+            <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+            <ac:rich-text-body>
+              <p>
+                <br/>
+              </p>
+            </ac:rich-text-body>
+          </ac:structured-macro>
+        </ac:rich-text-body>
+      </ac:structured-macro>
+      <ac:structured-macro ac:macro-id="396f1927-8c46-4bdd-9e12-85a650403e39" ac:name="confiform-table" ac:schema-version="1">
+        <ac:parameter ac:name="formName">Invoice</ac:parameter>
+        <ac:parameter ac:name="enableGridEdit">true</ac:parameter>
+        <ac:rich-text-body>
+          <p>
+            <br/>
+          </p>
+        </ac:rich-text-body>
+      </ac:structured-macro>
+      <p>
+        <br/>
+      </p>
+    </ac:layout-cell>
+  </ac:layout-section>
+</ac:layout>
